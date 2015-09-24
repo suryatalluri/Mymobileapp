@@ -427,5 +427,13 @@
 		"dataBinding": {},
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_New-wm.NavigationVariable-1443091935848"
+	},
+	"goToPage_TestRepo": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "TestRepo",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_TestRepo-wm.NavigationVariable-1443093172388"
 	}
 }
