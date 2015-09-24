@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="Sample" type="DataService" springFile="Sample.spring.xml">
+    <dataobjects>
+        <dataobject javaType="com.mymobileapp.sample.Table1">
+            <element name="id" typeRef="java.lang.Integer" isList="false" allowNull="false"/>
+            <element name="empId" typeRef="java.lang.Integer" isList="false" allowNull="true"/>
+            <element name="role" typeRef="java.lang.String" isList="false" allowNull="true"/>
+            <element name="doj" typeRef="java.util.Date" isList="false" allowNull="true"/>
+        </dataobject>
+    </dataobjects>
+</service>

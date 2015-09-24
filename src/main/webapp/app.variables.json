@@ -1670,5 +1670,106 @@
 		"dataBinding": {},
 		"category": "wm.NavigationVariable",
 		"_id": "wm-goToPage_Home-wm.NavigationVariable-1442908534855"
+	},
+	"SampleTable1Data": {
+		"type": "Table1",
+		"isList": true,
+		"owner": "App",
+		"dataSet": {
+			"dataValue": ""
+		},
+		"dataBinding": [
+			{
+				"name": "dataBinding",
+				"type": "object",
+				"fields": []
+			}
+		],
+		"saveInPhonegap": false,
+		"firstRow": 0,
+		"maxResults": 20,
+		"designMaxResults": 10,
+		"operation": "read",
+		"startUpdate": false,
+		"autoUpdate": true,
+		"inFlightBehavior": "executeLast",
+		"transformationRequired": false,
+		"liveSource": "Sample",
+		"ignoreCase": false,
+		"matchMode": "start",
+		"category": "wm.LiveVariable",
+		"isDefault": true,
+		"dbSystem": "MySQL",
+		"_id": "wm-SampleTable1Data-wm.LiveVariable-1443085228150",
+		"package": "com.mymobileapp.sample.Table1",
+		"tableName": "TABLE1",
+		"tableType": "TABLE",
+		"propertiesMap": {
+			"columns": [
+				{
+					"fieldName": "id",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "ID",
+					"isPrimaryKey": true,
+					"notNull": true,
+					"length": 255,
+					"precision": 19,
+					"generator": "identity",
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "empId",
+					"type": "integer",
+					"hibernateType": "integer",
+					"fullyQualifiedType": "integer",
+					"columnName": "EmpId",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"precision": 19,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "role",
+					"type": "string",
+					"hibernateType": "string",
+					"fullyQualifiedType": "string",
+					"columnName": "Role",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 255,
+					"precision": 19,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				},
+				{
+					"fieldName": "doj",
+					"type": "date",
+					"hibernateType": "date",
+					"fullyQualifiedType": "date",
+					"columnName": "DOJ",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 10,
+					"precision": 19,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
+				}
+			],
+			"primaryKeys": [
+				"id"
+			],
+			"entityName": "Table1",
+			"fullyQualifiedName": "com.mymobileapp.sample.Table1",
+			"tableType": "TABLE"
+		},
+		"name": "SampleTable1Data"
 	}
 }
