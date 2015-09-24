@@ -33,6 +33,7 @@ import javax.persistence.UniqueConstraint;
  */
 @Entity
 @Table(name="TABLE1"
+    ,schema="MyTestDatabase"
 )
 public class Table1  implements java.io.Serializable
  {
