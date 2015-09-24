@@ -1,0 +1,71 @@
+<style id="Page3.css">
+
+</style>
+<script id="Page3.js">
+Application.$controller("Page3PageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="Page3.variables.json">
+var _Page3Page_Variables_ ={}
+</script>
+<script id="Page3.html" type="text/ng-template">
+<wm-page data-ng-controller="Page3PageController" name="page1">
+    <wm-mobile-navbar name="mobile_navbar1" title="View Details"></wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-accordion name="accordion1">
+                <wm-accordionpane name="accordionpane1">
+                    <wm-accordionheader name="accordionheader1" heading="List of members"></wm-accordionheader>
+                    <wm-accordioncontent name="accordioncontent1" paddingtop="5" paddingbottom="5" paddingright="5" paddingleft="5">
+                        <wm-livelist listclass="list-group" itemclass="list-group-item" name="livelist1" dataset="bind:Variables.MyTestDatabaseTable1Data.dataSet" itemsperrow="3">
+                            <wm-listtemplate layout="panel" name="listtemplate1">
+                                <wm-panel collapsible="true" class="panel-default" data-template-ctr="true" showheader="true" name="panel2" title="bind:Variables.MyTestDatabaseTable1Data.dataSet.data[$i].name">
+                                    <wm-label width="38" caption="bind:Variables.MyTestDatabaseTable1Data.dataSet.id" name="label2"></wm-label>
+                                    <wm-label width="38" caption="bind:Variables.MyTestDatabaseTable1Data.dataSet.name" name="label3"></wm-label>
+                                </wm-panel>
+                            </wm-listtemplate>
+                        </wm-livelist>
+                    </wm-accordioncontent>
+                </wm-accordionpane>
+            </wm-accordion>
+            <wm-segmented-control backgroundattachment="local" borderunit="em" name="segmented_control1">
+                <wm-segment-content caption="Name" name="segment_content1">
+                    <wm-composite name="composite1">
+                        <wm-label class="col-md-3" caption="Name" name="label3_1"></wm-label>
+                        <wm-container class="col-md-9" name="container1">
+                            <wm-text datavalue="bind:Variables.SelectedItem.dataSet.dataValue" name="text1" height="40" width="225"></wm-text>
+                        </wm-container>
+                    </wm-composite>
+                </wm-segment-content>
+                <wm-segment-content caption="DOB" name="segment_content2">
+                    <wm-composite name="composite2">
+                        <wm-label class="col-md-3" caption="DOB" name="label4"></wm-label>
+                        <wm-container class="col-md-9" name="container2">
+                            <wm-date name="date1"></wm-date>
+                        </wm-container>
+                    </wm-composite>
+                </wm-segment-content>
+            </wm-segmented-control>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>

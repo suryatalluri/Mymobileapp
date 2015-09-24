@@ -1,0 +1,47 @@
+<style id="Home.css">
+
+</style>
+<script id="Home.js">
+Application.$controller("HomePageController", ["$scope", function ($scope) {
+    "use strict";
+
+    /* perform any action with the variables inside this block(on-page-load) */
+    $scope.onPageVariablesReady = function () {
+        /*
+         * variables can be accessed through '$scope.Variables' property here
+         * e.g. $scope.Variables.staticVariable1.getData()
+         */
+    };
+    
+    /* perform any action with widgets inside this block */
+    $scope.onPageReady = function () {
+        /*
+         * widgets can be accessed through '$scope.Widgets' property here
+         * e.g. $scope.Widgets.byId(), $scope.Widgets.byName()or access widgets by $scope.Widgets.widgetName
+         */
+    };
+
+}]);
+
+</script>
+<script id="Home.variables.json">
+var _HomePage_Variables_ ={}
+</script>
+<script id="Home.html" type="text/ng-template">
+<wm-page data-ng-controller="HomePageController" name="page1">
+    <wm-mobile-navbar name="mobile_navbar1" backbutton="false" title="Home">
+        <wm-container width="90" name="container3">
+            <wm-button class="btn-default" caption="Logout" type="button" width="72" on-click="goToPage-Main" margintop="5" marginleft="5" marginright="5" marginbottom="5" height="44" textalign="center" name="button2_1" backgroundcolor="#ff0000" color="#ffffff"></wm-button>
+        </wm-container>
+    </wm-mobile-navbar>
+    <wm-content name="content1">
+        <wm-page-content columnwidth="12" name="page_content1">
+            <wm-container name="container1" horizontalalign="center">
+                <wm-picture name="picture1" picturesource="resources/images/imagelists/Add.jpg" height="85" on-click="goToPage_Page1" shape="rounded" width="85" margintop="20" marginleft="20" marginright="20" marginbottom="20"></wm-picture>
+                <wm-picture name="picture2" picturesource="resources/images/imagelists/view-button-th.png" height="85" width="85" on-click="goToPage_Page3" shape="rounded" pictureaspect="None" paddingtop="10" paddingleft="10" margintop="30"
+                marginleft="30" marginright="40" marginbottom="40"></wm-picture>
+            </wm-container>
+        </wm-page-content>
+    </wm-content>
+</wm-page>
+</script>
