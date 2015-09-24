@@ -55,6 +55,9 @@
                 <prop key="hibernate.globally_quoted_identifiers">
                     false
                 </prop>
+                <prop key="hibernate.hbm2ddl.auto">
+                    ${hrdb.hbm2ddl}
+                </prop>
             </props>
         </property>
     </bean>
