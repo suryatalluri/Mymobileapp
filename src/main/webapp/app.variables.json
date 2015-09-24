@@ -1672,6 +1672,7 @@
 		"_id": "wm-goToPage_Home-wm.NavigationVariable-1442908534855"
 	},
 	"SampleTable1Data": {
+		"name": "SampleTable1Data",
 		"type": "Table1",
 		"isList": true,
 		"owner": "App",
@@ -1769,7 +1770,14 @@
 			"entityName": "Table1",
 			"fullyQualifiedName": "com.mymobileapp.sample.Table1",
 			"tableType": "TABLE"
-		},
-		"name": "SampleTable1Data"
+		}
+	},
+	"goToPage_New": {
+		"owner": "App",
+		"operation": "gotoPage",
+		"pageName": "New",
+		"dataBinding": {},
+		"category": "wm.NavigationVariable",
+		"_id": "wm-goToPage_New-wm.NavigationVariable-1443091935848"
 	}
 }
