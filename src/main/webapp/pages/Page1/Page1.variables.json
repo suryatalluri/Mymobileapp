@@ -73,6 +73,20 @@
 					"generator": null,
 					"isRelated": false,
 					"defaultValue": null
+				},
+				{
+					"fieldName": "dob",
+					"type": "date",
+					"hibernateType": "date",
+					"fullyQualifiedType": "date",
+					"columnName": "DOB",
+					"isPrimaryKey": false,
+					"notNull": false,
+					"length": 1,
+					"precision": 19,
+					"generator": null,
+					"isRelated": false,
+					"defaultValue": null
 				}
 			],
 			"primaryKeys": [
